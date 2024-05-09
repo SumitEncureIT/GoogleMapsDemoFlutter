@@ -18,15 +18,12 @@ class _MapPageState extends State<MapPage> {
   Location _locationController = Location();
 
   final Completer<GoogleMapController> _mapController = Completer<GoogleMapController>();
-
   static const LatLng _pGooglePixel = LatLng(37.4223, -122.0848);
   static const LatLng _pApplePark = LatLng(37.3346, -122.0090);
 
   LatLng? _currentP = null;
 
   Map<PolylineId, Polyline> polylines = {};
-
-
 
   @override
   void initState() {
